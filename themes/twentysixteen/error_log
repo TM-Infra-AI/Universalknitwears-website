@@ -1,0 +1,11 @@
+[14-Mar-2024 23:06:55 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/universalknit/public_html/wp-content/themes/twentysixteen/index.php on line 17
+[17-Mar-2024 19:37:56 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/universalknit/public_html/wp-content/themes/twentysixteen/index.php on line 17
+[22-Mar-2024 04:40:30 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/universalknit/public_html/wp-content/themes/twentysixteen/index.php on line 17
+[02-May-2025 09:07:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/universalknit/public_html/wp-content/themes/twentysixteen/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/universalknit/public_html/wp-content/themes/twentysixteen/index.php on line 17
+[05-May-2025 13:11:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/universalknit/public_html/wp-content/themes/twentysixteen/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/universalknit/public_html/wp-content/themes/twentysixteen/index.php on line 17

@@ -1,0 +1,434 @@
+<?php
+	
+// Adding WP Functions & Theme Support
+function joints_theme_support() {
+
+	// Add WP Thumbnail Support
+	add_theme_support( 'post-thumbnails' );
+	
+	// Default thumbnail size
+	set_post_thumbnail_size(125, 125, true);
+
+	// Add RSS Support
+	add_theme_support( 'automatic-feed-links' );
+	
+	// Add Support for WP Controlled Title Tag
+	add_theme_support( 'title-tag' );
+	
+	// Add HTML5 Support
+	add_theme_support( 'html5', 
+	         array( 
+	         	'comment-list', 
+	         	'comment-form', 
+	         	'search-form', 
+	         ) 
+	);
+	
+	// Adding post format support
+	/* add_theme_support( 'post-formats',
+		array(
+			'aside',             // title less blurb
+			'gallery',           // gallery of images
+			'link',              // quick link to other site
+			'image',             // an image
+			'quote',             // a quick quote
+			'status',            // a Facebook like status update
+			'video',             // video
+			'audio',             // audio
+			'chat'               // chat transcript
+		)
+	); */	
+	
+} /* end theme support */
+add_action( 'init', 'my_add_excerpts_to_pages' );
+function my_add_excerpts_to_pages() {
+     add_post_type_support( 'page', 'excerpt' );
+}
+
+/*login Logout Button on the frontend*/
+add_filter( 'wp_nav_menu_items', 'add_loginout_link', 10, 2 );
+function add_loginout_link( $items, $args ) {
+	if (is_user_logged_in() && $args->theme_location == 'top-menu') {
+
+	$items .= '<li class="product"><a href="'. wp_logout_url('my-account/customer-logout/') .'">Log Out</a></li>';
+	}
+elseif (!is_user_logged_in() && $args->theme_location == 'top-menu') {
+$items .= '<li class="product"><a href="'. site_url('my-account/') .'">Log In</a></li>';
+}
+return $items;
+}
+add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
+
+function sb_woo_remove_reviews_tab($tabs) {
+
+ unset($tabs['reviews']);
+
+ return $tabs;
+}
+
+/*Email CC send to selective country*/
+function email_send_cc( $headers, $email_id, $order ){
+    $admin_emails = array( 
+        'new_order'
+    ); 
+$customer_id = get_current_user_id();
+$country = get_user_meta( $customer_id, 'billing_country', true );
+
+    if( in_array( $email_id, $admin_emails ) && ($country =="DK" || $country =="SE" || $country =="NO" || $country =="FI") ){
+        $headers .= 'CC:<el@braendgaard.dk>' . "\r\n";
+    }
+    return $headers;
+
+}
+add_action( 'woocommerce_email_headers', 'email_send_cc', 10, 3 );
+
+/*Override Registration form for Frontend*/
+
+add_action( 'register_form', 'register_form_for_additional_field' );
+function register_form_for_additional_field() {
+
+	$first_name = ( ! empty( $_POST['first_name'] ) ) ? trim( $_POST['first_name'] ) : '';
+	$last_name = ( ! empty( $_POST['last_name'] ) ) ? trim( $_POST['last_name'] ) : '';
+	$company_name = ( ! empty( $_POST['company_name'] ) ) ? trim( $_POST['company_name'] ) : '';
+	$company_type = ( ! empty( $_POST['company_type'] ) ) ? trim( $_POST['company_type'] ) : '';
+	$contact_person = ( ! empty( $_POST['contact_person'] ) ) ? trim( $_POST['contact_person'] ) : '';
+	$awb_account_no = ( ! empty( $_POST['awb_account_no'] ) ) ? trim( $_POST['awb_account_no'] ) : '';
+	$nominated_courier = ( ! empty( $_POST['nominated_courier'] ) ) ? serialize($_POST['nominated_courier'] ) : '';
+	
+	
+	$country = ( ! empty( $_POST['country'] ) ) ? trim( $_POST['country'] ) : '';
+	$address1 = ( ! empty( $_POST['address1'] ) ) ? trim( $_POST['address1'] ) : '';
+	$address2 = ( ! empty( $_POST['address2'] ) ) ? trim( $_POST['address2'] ) : '';
+	$post_code = ( ! empty( $_POST['post_code'] ) ) ? trim( $_POST['post_code'] ) : '';
+	$city = ( ! empty( $_POST['city'] ) ) ? trim( $_POST['city'] ) : '';
+	$phone = ( ! empty( $_POST['phone'] ) ) ? trim( $_POST['phone'] ) : '';
+	$mobile_phone = ( ! empty( $_POST['mobile_phone'] ) ) ? trim( $_POST['mobile_phone'] ) : '';
+        
+        ?>
+		<p class="form-row form-row-first validate-required">
+            <label for="first_name"><?php _e( 'First Name', 'woocommerce' ) ?></label>
+                <input type="text" name="first_name" id="first_name" class="input" value="<?php echo esc_attr( wp_unslash( $first_name ) ); ?>" size="25" />
+        </p>
+		<p  class="form-row form-row-last validate-required">
+            <label for="last_name"><?php _e( 'Last Name', 'woocommerce' ) ?></label>
+                <input type="text" name="last_name" id="last_name" class="input" value="<?php echo esc_attr( wp_unslash( $last_name ) ); ?>" size="25" />
+        </p>
+		
+		<p class="form-row form-row-first">
+            <label for="phone"><?php _e( 'Phone', 'woocommerce' ) ?></label>
+                <input type="text" name="phone" id="phone" class="input" value="<?php echo esc_attr( wp_unslash( $phone ) ); ?>" size="25" />
+        </p>
+		<p  class="form-row form-row-last">
+            <label for="mobile_phone"><?php _e( 'Mobile Phone', 'woocommerce' ) ?></label>
+                <input type="text" name="mobile_phone" id="mobile_phone" class="input" value="<?php echo esc_attr( wp_unslash( $mobile_phone ) ); ?>" size="25" />
+        </p>
+		<h4>Company Details (Optional)</h4> 
+	    <p class="form-row form-row-first validate-required">
+            <label for="company_name"><?php _e( 'Company Name', 'woocommerce' ) ?></label>
+                <input type="text" name="company_name" id="company_name" class="input" value="<?php echo esc_attr( wp_unslash( $company_name ) ); ?>" size="25" />
+        </p>
+		
+		<p class="form-row form-row-last">
+            <label for="company_type"><?php _e( 'Company Type', 'woocommerce' ) ?></label>
+                <input type="text" name="company_type" id="company_type" class="input" value="<?php echo esc_attr( wp_unslash( $company_type ) ); ?>" size="25" />
+        </p>
+		
+		<p class="form-row form-row-wide">
+            <label for="contact_person"><?php _e( 'Contact Person', 'woocommerce' ) ?></label>
+                <input type="text" name="contact_person" id="contact_person" class="input" value="<?php echo esc_attr( wp_unslash( $contact_person ) ); ?>" size="25" />
+        </p>
+		
+		<p class="form-row form-row-wide">
+            <label for="awb_account_no"><?php _e( 'AWB Account No.', 'woocommerce' ) ?></label>
+                <input type="text" name="awb_account_no" id="awb_account_no" class="input" value="<?php echo esc_attr( wp_unslash( $awb_account_no ) ); ?>" size="25" />
+        </p>
+		<p class="form-row form-row-wide">
+            <label for="nominated_courier"><?php _e( 'Nominated Courier details(Example TNT - DHL - etc.)', 'woocommerce' ) ?></label>
+                	<input type="checkbox" name="nominated_courier[0]" value="<?php echo esc_attr( wp_unslash( 'DHL' ) ); ?>"> DHL 
+					<input type="checkbox" name="nominated_courier[1]" value="<?php echo esc_attr( wp_unslash( 'UPS' ) ); ?>"> UPS 
+					<input type="checkbox" name="nominated_courier[2]" value="<?php echo esc_attr( wp_unslash( 'TNT' ) ); ?>"> TNT 
+					<input type="checkbox" name="nominated_courier[3]" value="<?php echo esc_attr( wp_unslash( 'Others' ) ); ?>"> Others 
+
+        </p>
+		
+		<p class="form-row form-row-wide">
+            <label for="country"><?php _e( 'Country', 'woocommerce' ) ?></label>
+			<input type="text" name="country" id="country" class="input" value="<?php echo esc_attr( wp_unslash( $country ) ); ?>" size="25" />
+                	
+        </p>
+		
+		<p class="form-row form-row-wide">
+            <label for="address1"><?php _e( 'Address', 'woocommerce' ) ?></label>
+			<input type="text" name="address1" id="address1" placeholder="Street address" class="input" value="<?php echo esc_attr( wp_unslash( $address1 ) ); ?>" size="25" />
+			<input type="text" name="address2" id="address2" placeholder="Apartment, suite, unit etc. (optional)" class="input" value="<?php echo esc_attr( wp_unslash( $address2 ) ); ?>" size="25" />
+                	
+        </p>
+		
+		<p class="form-row form-row-first">
+            <label for="post_code"><?php _e( 'Postcode / ZIP', 'woocommerce' ) ?></label>
+                <input type="text" name="post_code" id="post_code" class="input" value="<?php echo esc_attr( wp_unslash( $post_code ) ); ?>" size="25" />
+        </p>
+		<p  class="form-row form-row-last">
+            <label for="city"><?php _e( 'Town / City', 'woocommerce' ) ?></label>
+                <input type="text" name="city" id="city" class="input" value="<?php echo esc_attr( wp_unslash( $city ) ); ?>" size="25" />
+        </p>
+		
+        <?php
+    }
+ 
+  add_filter( 'registration_errors', 'plugin_registration_errors', 10, 3 );
+    function plugin_registration_errors( $errors, $sanitized_user_login, $user_email ) {
+        
+        
+		if ( empty( $_POST['first_name'] ) || ! empty( $_POST['first_name'] ) && trim( $_POST['first_name'] ) == '' ) {
+            $errors->add( 'first_name_error', __( '<strong>ERROR</strong>: You must include a first name.', 'woocommerce' ) );
+        }
+		if ( empty( $_POST['last_name'] ) || ! empty( $_POST['last_name'] ) && trim( $_POST['last_name'] ) == '' ) {
+            $errors->add( 'last_name_error', __( '<strong>ERROR</strong>: You must include a last name.', 'woocommerce' ) );
+        }
+		if ( empty( $_POST['company_name'] ) || ! empty( $_POST['company_name'] ) && trim( $_POST['company_name'] ) == '' ) {
+            $errors->add( 'company_name_error', __( '<strong>ERROR</strong>: You must include a company name.', 'woocommerce' ) );
+        }
+
+        return $errors;
+    }
+
+	 add_action( 'user_register', 'plugin_user_register' );
+    function plugin_user_register( $user_id ) {
+        
+		if ( ! empty( $_POST['first_name'] ) ) {
+            update_user_meta( $user_id, 'first_name', trim( $_POST['first_name'] ) );
+        }
+		if ( ! empty( $_POST['last_name'] ) ) {
+            update_user_meta( $user_id, 'last_name', trim( $_POST['last_name'] ) );
+        }
+		if ( ! empty( $_POST['company_name'] ) ) {
+            update_user_meta( $user_id, 'company_name', trim( $_POST['company_name'] ) );
+        }
+		if ( ! empty( $_POST['company_type'] ) ) {
+            update_user_meta( $user_id, 'company_type', trim( $_POST['company_type'] ) );
+        }
+		if ( ! empty( $_POST['contact_person'] ) ) {
+            update_user_meta( $user_id, 'contact_person', trim( $_POST['contact_person'] ) );
+        }
+		if ( ! empty( $_POST['awb_account_no'] ) ) {
+            update_user_meta( $user_id, 'awb_account_no', trim( $_POST['awb_account_no'] ) );
+        }
+		if ( ! empty( $_POST['nominated_courier'] ) ) {
+            update_user_meta( $user_id, 'nominated_courier', serialize( $_POST['nominated_courier'] ) );
+        }
+		if ( ! empty( $_POST['country'] ) ) {
+            update_user_meta( $user_id, 'country', trim( $_POST['country'] ) );
+        }
+		if ( ! empty( $_POST['address1'] ) ) {
+            update_user_meta( $user_id, 'address1', trim( $_POST['address1'] ) );
+        }
+		if ( ! empty( $_POST['address2'] ) ) {
+            update_user_meta( $user_id, 'address2', trim( $_POST['address2'] ) );
+        }
+		if ( ! empty( $_POST['post_code'] ) ) {
+            update_user_meta( $user_id, 'post_code', trim( $_POST['post_code'] ) );
+        }
+		if ( ! empty( $_POST['city'] ) ) {
+            update_user_meta( $user_id, 'city', trim( $_POST['city'] ) );
+        }
+		if ( ! empty( $_POST['phone'] ) ) {
+            update_user_meta( $user_id, 'phone', trim( $_POST['phone'] ) );
+        }
+		if ( ! empty( $_POST['mobile_phone'] ) ) {
+            update_user_meta( $user_id, 'mobile_phone', trim( $_POST['mobile_phone'] ) );
+        }
+    }
+
+/*Edit Account Page form-edit-account.php*/	
+function wooc_save_extra_register_fields( $user_id ) {
+//print_r($_POST['nominated_courier']); die();
+	if ( isset( $_POST['account_first_name'] ) ) {
+		update_user_meta( $user_id, 'first_name', trim( $_POST['account_first_name'] ) );
+	}
+	if ( isset( $_POST['account_last_name'] ) ) {
+		update_user_meta( $user_id, 'last_name', trim( $_POST['account_last_name'] ) );
+	}
+	if ( isset( $_POST['account_company_name'] ) ) {
+		update_user_meta( $user_id, 'company_name', trim( $_POST['account_company_name'] ) );
+	}
+	if ( isset( $_POST['account_company_type'] ) ) {
+		update_user_meta( $user_id, 'company_type', trim( $_POST['account_company_type'] ) );
+	}
+	if ( isset( $_POST['account_contact_person'] ) ) {
+		update_user_meta( $user_id, 'contact_person', trim( $_POST['account_contact_person'] ) );
+	}
+	if ( isset( $_POST['account_awb_account_no'] ) ) {
+		update_user_meta( $user_id, 'awb_account_no', trim( $_POST['account_awb_account_no'] ) );
+	}
+	if ( isset( $_POST['nominated_courier'] ) ) {
+		update_user_meta( $user_id, 'nominated_courier', serialize( $_POST['nominated_courier'] ) );
+	}
+	if ( isset( $_POST['account_country'] ) ) {
+		update_user_meta( $user_id, 'country', trim( $_POST['account_country'] ) );
+	}
+	if ( isset( $_POST['account_address1'] ) ) {
+		update_user_meta( $user_id, 'address1', trim( $_POST['account_address1'] ) );
+	}
+	if ( isset( $_POST['account_address2'] ) ) {
+		update_user_meta( $user_id, 'address2', trim( $_POST['account_address2'] ) );
+	}
+	if ( isset( $_POST['account_post_code'] ) ) {
+		update_user_meta( $user_id, 'post_code', trim( $_POST['account_post_code'] ) );
+	}
+	if ( isset( $_POST['account_city'] ) ) {
+		update_user_meta( $user_id, 'city', trim( $_POST['account_city'] ) );
+	}
+	if ( isset( $_POST['account_phone'] ) ) {
+		update_user_meta( $user_id, 'phone', trim( $_POST['account_phone'] ) );
+	}
+	if ( isset( $_POST['account_mobile_phone'] ) ) {
+		update_user_meta( $user_id, 'mobile_phone', trim( $_POST['account_mobile_phone'] ) );
+	}
+
+}
+
+add_action('profile_update','wooc_save_extra_register_fields',10,1);
+
+/*wp-admin custom user profile fields*/
+
+add_action ( 'show_user_profile', 'wpadmin_show_extra_profile_fields' );
+add_action ( 'edit_user_profile', 'wpadmin_show_extra_profile_fields' );
+
+function wpadmin_show_extra_profile_fields ( $user )
+{
+?>
+    <h3>Additional Profile Information</h3>
+    <table class="form-table">
+        <tr>
+            <th><label for="twitter">Company Name</label></th>
+            <td>              
+				<input type="text" name="company_name" id="company_name" value="<?php echo esc_attr( get_the_author_meta( 'company_name', $user->ID ) ); ?>" class="regular-text" />
+            </td>
+        </tr>
+		
+		<tr>
+            <th><label for="twitter">Company Type</label></th>
+            <td>              
+				<input type="text" name="company_type" id="company_type" value="<?php echo esc_attr( get_the_author_meta( 'company_type', $user->ID ) ); ?>" class="regular-text" />
+            </td>
+        </tr>
+		
+		<tr>
+            <th><label for="twitter">Contact Person</label></th>
+            <td>              
+				<input type="text" name="contact_person" id="contact_person" value="<?php echo esc_attr( get_the_author_meta( 'contact_person', $user->ID ) ); ?>" class="regular-text" />
+            </td>
+        </tr>
+		
+		<tr>
+            <th><label for="twitter">AWB Account No.</label></th>
+            <td>              
+				<input type="text" name="awb_account_no" id="awb_account_no" value="<?php echo esc_attr( get_the_author_meta( 'awb_account_no', $user->ID ) ); ?>" class="regular-text" />
+            </td>
+        </tr>
+		
+		<tr>
+            <th><label for="twitter">Nominated Courier details(Example TNT - DHL - etc.)</label></th>
+            <td>              
+
+				<?php $us_nominated_courier = unserialize(get_the_author_meta( 'nominated_courier', $user->ID ));?>
+				<input type="checkbox" name="nominated_courier[0]" value="DHL" <?php if(esc_attr( $us_nominated_courier[0] )=='DHL'){echo "checked";} ?>> DHL 
+					<input type="checkbox" name="nominated_courier[1]" value="UPS" <?php if(esc_attr( $us_nominated_courier[1] )=='UPS'){echo "checked";} ?>> UPS 
+					<input type="checkbox" name="nominated_courier[2]" value="TNT" <?php if(esc_attr( $us_nominated_courier[2] )=='TNT'){echo "checked";} ?>> TNT 
+					<input type="checkbox" name="nominated_courier[3]" value="Others" <?php if(esc_attr( $us_nominated_courier[3] )=='Others'){echo "checked";} ?>> Others 
+					
+					
+            </td>
+        </tr>
+		
+		<tr>
+            <th><label for="twitter">Country</label></th>
+            <td>              
+				<input type="text" name="country" id="country" value="<?php echo esc_attr( get_the_author_meta( 'country', $user->ID ) ); ?>" class="regular-text" />
+            </td>
+        </tr>
+		
+		<tr>
+            <th><label for="twitter">Address1</label></th>
+            <td>              
+				<input type="text" name="address1" id="address1" value="<?php echo esc_attr( get_the_author_meta( 'address1', $user->ID ) ); ?>" class="regular-text" />
+            </td>
+        </tr>
+		
+		<tr>
+            <th><label for="twitter">Address2</label></th>
+            <td>              
+				<input type="text" name="address2" id="address2" value="<?php echo esc_attr( get_the_author_meta( 'address2', $user->ID ) ); ?>" class="regular-text" />
+            </td>
+        </tr>
+		
+		<tr>
+            <th><label for="twitter">Post Code</label></th>
+            <td>              
+				<input type="text" name="post_code" id="post_code" value="<?php echo esc_attr( get_the_author_meta( 'post_code', $user->ID ) ); ?>" class="regular-text" />
+            </td>
+        </tr>
+		
+		<tr>
+            <th><label for="twitter">City</label></th>
+            <td>              
+				<input type="text" name="city" id="city" value="<?php echo esc_attr( get_the_author_meta( 'city', $user->ID ) ); ?>" class="regular-text" />
+            </td>
+        </tr>
+		
+		<tr>
+            <th><label for="twitter">Phone</label></th>
+            <td>              
+				<input type="text" name="phone" id="phone" value="<?php echo esc_attr( get_the_author_meta( 'phone', $user->ID ) ); ?>" class="regular-text" />
+            </td>
+        </tr>
+		
+		<tr>
+            <th><label for="twitter">Mobile Phone</label></th>
+            <td>              
+				<input type="text" name="mobile_phone" id="mobile_phone" value="<?php echo esc_attr( get_the_author_meta( 'mobile_phone', $user->ID ) ); ?>" class="regular-text" />
+            </td>
+        </tr>
+		
+    </table>
+<?php
+}
+add_action( 'personal_options_update', 'wpadmin_save_custom_user_profile_fields' );
+add_action( 'edit_user_profile_update', 'wpadmin_save_custom_user_profile_fields' );
+function wpadmin_save_custom_user_profile_fields( $user_id ) {
+	
+	if ( !current_user_can( 'edit_user', $user_id ) ){
+		return FALSE;
+	}
+	else{
+	update_usermeta( $user_id, 'company_name', $_POST['company_name'] );
+	update_usermeta( $user_id, 'company_type', $_POST['company_type'] );
+	update_usermeta( $user_id, 'contact_person', $_POST['contact_person'] );
+	update_usermeta( $user_id, 'awb_account_no', $_POST['awb_account_no'] );
+	update_usermeta( $user_id, 'nominated_courier', $_POST['nominated_courier'] );
+	update_usermeta( $user_id, 'country', $_POST['country'] );
+	update_usermeta( $user_id, 'address1', $_POST['address1'] );
+	update_usermeta( $user_id, 'address2', $_POST['address2'] );
+	update_usermeta( $user_id, 'post_code', $_POST['post_code'] );
+	update_usermeta( $user_id, 'city', $_POST['city'] );
+	update_usermeta( $user_id, 'phone', $_POST['phone'] );
+	update_usermeta( $user_id, 'mobile_phone', $_POST['mobile_phone'] );
+	}
+}
+function change_role_name() {
+    global $wp_roles;
+
+    if ( ! isset( $wp_roles ) )
+        $wp_roles = new WP_Roles();
+
+    //You can list all currently available roles like this...
+    //$roles = $wp_roles->get_names();
+    //print_r($roles);
+
+    //You can replace "administrator" with any other role "editor", "author", "contributor" or "subscriber"...
+    $wp_roles->roles['subscriber']['name'] = 'User for Quote';
+    $wp_roles->role_names['subscriber'] = 'User for Quote';           
+}
+add_action('init', 'change_role_name');
+?>

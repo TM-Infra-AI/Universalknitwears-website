@@ -1,0 +1,8 @@
+.single_add_to_quote_loop {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.button_add_to_quote { margin-top: 12px; clear: both;}
+p.adq-order-detail-button { display:inline; } 
+div.adq-order-detail-buttons { margin-bottom: 24px }
+.field-hidden { display:none }

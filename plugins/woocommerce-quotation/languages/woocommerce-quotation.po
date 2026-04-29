@@ -1,0 +1,1717 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Adquote 1.0.0\n"
+"POT-Creation-Date: 2015-10-29 12:18+0100\n"
+"PO-Revision-Date: 2015-10-29 12:19+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: /var/www/html/wordpress/wp-content/plugins/woocommerce-"
+"quotation\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: functions/adq-global.php:15
+msgctxt "Configuration Quote"
+msgid "Configuration"
+msgstr ""
+
+#: functions/adq-global.php:31
+msgctxt "Page slug"
+msgid "quote-list"
+msgstr ""
+
+#: functions/adq-global.php:32
+msgctxt "Page title"
+msgid "Quote List"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:190
+#, php-format
+msgid ""
+"I&rsquo;ve read and accept the <a href=\"%s\" target=\"_blank\">terms &amp; "
+"conditions</a>"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:196
+msgid "Leave a Comment"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:197
+msgid "Notes about your Quote Request."
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:202
+msgid "Submit Quote Request"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:256
+#: templates/adq-order-detail-quote.php:64
+#: templates/adq-order-detail-quote.php:65
+msgid "Accept proposal"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:261
+#: templates/adq-order-detail-quote.php:70
+#: templates/adq-order-detail-quote.php:71
+msgid "Reject proposal"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:277 templates/my-quotation.php:75
+msgid "Cancel"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:293
+#: functions/adq-frontend-quote-request.php:323
+msgid "Related quote"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:301
+#: functions/adq-frontend-quote-request.php:331
+#: functions/adq-admin-quote-request.php:93
+msgid "Related order"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:347
+#: functions/adq-frontend-quote-request.php:366
+#: templates/emails/admin-request.php:47
+#: templates/emails/customer-request.php:56
+#: templates/emails/plain/admin-request.php:44
+#: templates/emails/plain/customer-request.php:43
+msgid "Not yet proposed"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:448
+#: functions/adq-frontend-quote-request.php:481
+msgid "Cannot change order status"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:456
+msgid "This link is currently invalid"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:462
+#: functions/adq-frontend-quote-request.php:474
+msgid "Quote Request updated"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:478
+msgid "Quote Request canceled"
+msgstr ""
+
+#: functions/adq-frontend-quote-request.php:663
+#, php-format
+msgid "Quote #%s"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:87
+msgid "Related quote proposal"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:120
+msgid "Validity date:"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:122
+#: functions/adq-admin-quote-request.php:128
+msgid "h"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:123
+#: functions/adq-admin-quote-request.php:129
+msgid "m"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:126
+msgid "Reminder date:"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:132
+msgid "Additional information:"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:143
+#: classes/sections/class-adq-sections-quotelist.php:208
+msgid "Name"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:143
+msgid "This is the name of the attachment shown to the customer."
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:144
+msgid "File URL"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:144
+msgid ""
+"This is the URL or absolute path to the file which customer will get access "
+"to."
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:168
+msgid "Add File"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:266
+msgid "Visibility add to quote button:"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:270
+#: functions/adq-admin-quote-request.php:290
+#: functions/adq-admin-quote-request.php:310
+#: functions/adq-admin-quote-request.php:330
+msgid "Use global settings"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:279
+#: functions/adq-admin-quote-request.php:299
+#: functions/adq-admin-quote-request.php:319
+#: classes/sections/class-adq-sections-catalog.php:266
+#: classes/sections/class-adq-sections-catalog.php:285
+msgid "Choose the the roles can view..."
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:286
+msgid "Visibility price on shop:"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:306
+msgid "Visibility add to cart button:"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:326
+msgid "Allow comments:"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:335
+#: classes/sections/class-adq-sections-crm.php:47
+msgid "Allow comments on products in quote list"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:353
+msgid "Order Data"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:354
+#: classes/class-adq-settings-page.php:60
+msgid "Quotation"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:355
+msgid "Order Items"
+msgstr ""
+
+#: functions/adq-admin-quote-request.php:358
+msgid "Quotation options"
+msgstr ""
+
+#: functions/adq-order-quote.php:17 functions/adq-order-quote.php:97
+msgctxt "Order status"
+msgid "Request"
+msgstr ""
+
+#: functions/adq-order-quote.php:22
+#, php-format
+msgid "Request <span class=\"count\">(%s)</span>"
+msgid_plural "Request <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/adq-order-quote.php:26 functions/adq-order-quote.php:98
+msgctxt "Order status"
+msgid "Proposal"
+msgstr ""
+
+#: functions/adq-order-quote.php:31
+#, php-format
+msgid "Proposal <span class=\"count\">(%s)</span>"
+msgid_plural "Proposal <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/adq-order-quote.php:35
+msgctxt "Order status"
+msgid "Proposal Sent"
+msgstr ""
+
+#: functions/adq-order-quote.php:40
+#, php-format
+msgid "Proposal sent <span class=\"count\">(%s)</span>"
+msgid_plural "Proposal sent <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/adq-order-quote.php:44 functions/adq-order-quote.php:100
+msgctxt "Order status"
+msgid "Proposal expired"
+msgstr ""
+
+#: functions/adq-order-quote.php:49
+#, php-format
+msgid "Proposal expired <span class=\"count\">(%s)</span>"
+msgid_plural "Proposal expired <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/adq-order-quote.php:53 functions/adq-order-quote.php:101
+msgctxt "Order status"
+msgid "Proposal rejected"
+msgstr ""
+
+#: functions/adq-order-quote.php:58
+#, php-format
+msgid "Proposal rejected <span class=\"count\">(%s)</span>"
+msgid_plural "Proposal rejected <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/adq-order-quote.php:62 functions/adq-order-quote.php:102
+msgctxt "Order status"
+msgid "Proposal canceled"
+msgstr ""
+
+#: functions/adq-order-quote.php:67
+#, php-format
+msgid "Proposal canceled <span class=\"count\">(%s)</span>"
+msgid_plural "Proposal canceled <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/adq-order-quote.php:71 functions/adq-order-quote.php:103
+msgctxt "Order status"
+msgid "Proposal accepted"
+msgstr ""
+
+#: functions/adq-order-quote.php:76
+#, php-format
+msgid "Proposal accepted <span class=\"count\">(%s)</span>"
+msgid_plural "Proposal accepted <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/adq-order-quote.php:99
+msgctxt "Order status"
+msgid "Proposal sent"
+msgstr ""
+
+#: functions/adq-order-quote.php:116
+msgid "Request"
+msgstr ""
+
+#: functions/adq-order-quote.php:117
+msgid "Proposal"
+msgstr ""
+
+#: functions/adq-order-quote.php:118
+msgid "Proposal sent"
+msgstr ""
+
+#: functions/adq-order-quote.php:119
+msgid "Proposal expired"
+msgstr ""
+
+#: functions/adq-order-quote.php:120
+msgid "Proposal rejected"
+msgstr ""
+
+#: functions/adq-order-quote.php:121
+msgid "Proposal canceled"
+msgstr ""
+
+#: functions/adq-order-quote.php:122
+#: classes/emails/class-adq-email-customer-proposal-ok.php:30
+#: classes/emails/class-adq-email-admin-proposal-ok.php:30
+msgid "Proposal accepted"
+msgstr ""
+
+#: functions/adq-order-quote.php:220
+msgid "Product Note"
+msgstr ""
+
+#: functions/adq-quote-ajax.php:55
+msgid ""
+"Please choose the quantity of items you wish to add to your quote&hellip;"
+msgstr ""
+
+#: functions/adq-quote-ajax.php:106
+#, php-format
+msgid "%s is a required field"
+msgid_plural "%s are required fields"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/adq-quote-ajax.php:109
+msgid "Please choose product options&hellip;"
+msgstr ""
+
+#: functions/adq-quote-ajax.php:148 classes/class.quote.php:193
+#: classes/class.static.quote.php:276 classes/class.static.quote.php:293
+#: classes/class.static.quote.php:310 templates/widget/mini-quote.php:67
+msgid "View Quote"
+msgstr ""
+
+#: functions/adq-quote-ajax.php:174
+#, php-format
+msgid "&quot;%s&quot; was successfully removed from list."
+msgstr ""
+
+#: functions/adq-quote-ajax.php:178
+#, php-format
+msgid "&quot;%s&quot; cannot be removed from list."
+msgstr ""
+
+#: functions/adq-quote-ajax.php:201
+msgid "All items was successfully removed from list."
+msgstr ""
+
+#: functions/adq-quote-ajax.php:205
+msgid "Items cannot be removed from list."
+msgstr ""
+
+#: functions/adq-quote-ajax.php:233
+#, php-format
+msgid "&quot;%s&quot; updated."
+msgstr ""
+
+#: functions/adq-quote-ajax.php:237
+#, php-format
+msgid "&quot;%s&quot; cannot be updated."
+msgstr ""
+
+#: functions/adq-quote-ajax.php:294
+msgid "Delete note"
+msgstr ""
+
+#: modules/contact-form-7.php:50
+msgid "Contact Form 7 shortcode"
+msgstr ""
+
+#: modules/contact-form-7.php:51
+msgid "Enter the Contact Form 7 shortcode to show the form."
+msgstr ""
+
+#: modules/contact-form-7.php:113
+msgid "Some fields are not valid."
+msgstr ""
+
+#: classes/class.adq.email.php:244
+msgid "This proposal is valid until"
+msgstr ""
+
+#: classes/class.adq.email.php:252
+msgid "Attached file"
+msgstr ""
+
+#: classes/class.adq.email.php:260 templates/adq-order-detail-quote.php:81
+msgid "Additional information"
+msgstr ""
+
+#: classes/class.quote.php:164
+msgid "Sorry, this product cannot be purchased."
+msgstr ""
+
+#: classes/class.quote.php:169
+#, php-format
+msgid ""
+"You cannot add &quot;%s&quot; to the quote list because the product is out "
+"of stock."
+msgstr ""
+
+#: classes/class.quote.php:173
+#, php-format
+msgid ""
+"You cannot add that amount of &quot;%s&quot; to the quote list because there "
+"is not enough stock (%s remaining)."
+msgstr ""
+
+#: classes/class.quote.php:194
+#, php-format
+msgid ""
+"You cannot add that amount to the cart &mdash; we have %s in stock and you "
+"already have %s in your cart."
+msgstr ""
+
+#: classes/class.quote.php:410
+#, php-format
+msgid ""
+"%s has been removed from your quote list because it can no longer be "
+"purchased. Please contact us if you need assistance."
+msgstr ""
+
+#: classes/class.static.quote.php:271 classes/class.static.quote.php:277
+#: classes/class.static.quote.php:280
+#, php-format
+msgid "&quot;%s&quot; was successfully added to quote."
+msgstr ""
+
+#: classes/class.static.quote.php:288 classes/class.static.quote.php:294
+#: classes/class.static.quote.php:297
+#, php-format
+msgid "&quot;%s&quot; cannot be added to quote."
+msgstr ""
+
+#: classes/class.static.quote.php:305 classes/class.static.quote.php:311
+#: classes/class.static.quote.php:314
+#, php-format
+msgid "You cannot add another &quot;%s&quot; to your quote."
+msgstr ""
+
+#: classes/class.static.quote.php:423
+msgid "No file defined"
+msgstr ""
+
+#: classes/class.static.quote.php:423 classes/class.static.quote.php:587
+msgid "Go to homepage"
+msgstr ""
+
+#: classes/class.static.quote.php:587
+msgid "File not found"
+msgstr ""
+
+#: classes/class.adq.order.php:37 classes/class.adq.order.php:38
+msgid "WooCommerce"
+msgstr ""
+
+#: classes/class.order.quote.php:57
+#, php-format
+msgid ""
+"Sorry, you haven't any product. <a href=\"%s\" class=\"wc-backward\">Return "
+"to homepage</a>"
+msgstr ""
+
+#: classes/class.order.quote.php:174
+msgid "Your quote request has been received"
+msgstr ""
+
+#: classes/class.order.quote.php:175
+msgid "Thank you for your interest!"
+msgstr ""
+
+#: classes/class.order.quote.php:176
+#, php-format
+msgid "Your quote request # is: Q.%06d."
+msgstr ""
+
+#: classes/class.order.quote.php:181
+msgid "There is an error creating your quote request"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:28
+#: classes/sections/class-adq-sections-quotelist.php:46
+#: classes/widget/class-wc-widget-quote.php:31
+msgid "Quote List"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:49
+msgid "Enable registration on the \"Quote List\" page"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:50
+#: classes/sections/class-adq-sections-quotelist.php:57
+#: classes/sections/class-adq-sections-quotelist.php:72
+#: classes/sections/class-adq-sections-quotelist.php:207
+msgid "Enabled"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:56
+msgid "Display returning customer login reminder"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:63
+msgid "Custom text for shipping"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:66
+#: templates/adq-cart-shipping.php:23
+msgid "I want Quote Request for Shipping"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:71
+msgid "Inherit the shipping configuration from WooCommerce"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:80
+msgid "Shipping Calculations"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:81
+msgid "Enable shipping"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:89
+msgid "Enable the shipping calculator on the cart page"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:98
+msgid "Hide shipping costs until an address is entered"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:107
+msgid "Shipping Display Mode"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:108
+msgid ""
+"This controls how multiple shipping methods are displayed on the frontend."
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:113
+msgid "Display shipping methods with \"radio\" buttons"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:114
+msgid "Display shipping methods in a dropdown"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:121
+msgid "Shipping Destination"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:122
+msgid "This controls which shipping address is used by default."
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:127
+msgid "Default to shipping address"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:128
+msgid "Default to billing address"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:129
+msgid "Only ship to the users billing address"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:137
+msgid "Restrict shipping to Location(s)"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:138
+#, php-format
+msgid ""
+"Choose which countries you want to ship to, or choose to ship to all <a href="
+"\"%s\">locations you sell to</a>."
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:145
+msgid "Ship to all countries you sell to"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:146
+msgid "Ship to all countries"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:147
+msgid "Ship to specific countries only"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:152
+msgid "Specific Countries"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:202
+msgid "Shipping Methods for Quotation"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:209
+msgid "ID"
+msgstr ""
+
+#: classes/sections/class-adq-sections-quotelist.php:230
+msgid "Settings"
+msgstr ""
+
+#: classes/sections/class-adq-sections-crm.php:28
+#: classes/sections/class-adq-sections-crm.php:43
+msgid "CRM"
+msgstr ""
+
+#: classes/sections/class-adq-sections-crm.php:46
+msgid "Allow comments on products"
+msgstr ""
+
+#: classes/sections/class-adq-sections-crm.php:53
+msgid "Allow comments on orders"
+msgstr ""
+
+#: classes/sections/class-adq-sections-crm.php:54
+msgid "Allow comments on orders in order detail"
+msgstr ""
+
+#: classes/sections/class-adq-sections-crm.php:60
+msgid "Display comments on orders"
+msgstr ""
+
+#: classes/sections/class-adq-sections-crm.php:61
+msgid "Display comments on orders in order detail"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:28
+#: classes/sections/class-adq-sections-options.php:43
+msgid "Options"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:46
+msgid "Enable guest request"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:47
+msgid "Allow customers to request for a quote without creating an account"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:53
+msgid "Display discount"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:54
+msgid "Show original price on products with discount"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:60
+msgid "After add to quote"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:61
+msgid "After Add to Quote"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:66
+msgid "Redirect to quote list page"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:67
+msgid "Show notice"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:68
+msgid "Show notice under quote button"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:75
+msgid "Redirect to payment when proposal is accepted"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:76
+msgid "Redirect"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:82
+msgid "URL Custom redirects after submitting a quote"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:83
+msgid "Leave blank to keep the default redirection"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:90
+msgid "Automatic proposal"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:91
+msgid "Create automatic proposal after request"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:101
+msgid "Show Terms"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:102
+msgid "Show Terms & Conditions on Quote List Page"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:111
+msgid "Disable Checkout Hooks:"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:112
+msgid "Disable some checkout hooks to avoid some plugins actions on Quote List"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:118
+msgid "Default validity date:"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:119
+msgid "Days before proposal expires"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:126
+msgid "Default reminder date:"
+msgstr ""
+
+#: classes/sections/class-adq-sections-options.php:127
+msgid "Days before reminder mail is send"
+msgstr ""
+
+#: classes/sections/class-adq-sections-form.php:28
+#: classes/sections/class-adq-sections-form.php:47
+msgid "Form"
+msgstr ""
+
+#: classes/sections/class-adq-sections-form.php:68
+#: classes/sections/class-adq-sections-form.php:78
+msgid "Cannot modify beacause this field is required for shipping"
+msgstr ""
+
+#: classes/sections/class-adq-sections-licence.php:28
+msgid "Licence"
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:28
+msgid "Catalog"
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:56
+msgid "No taxonomy"
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:69
+msgid "Buttons"
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:72
+#: classes/sections/class-adq-sections-catalog.php:246
+msgid "Visibility add to quote button"
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:73
+#: classes/sections/class-adq-sections-catalog.php:83
+#: classes/sections/class-adq-sections-catalog.php:93
+msgid "Choose the roles can view..."
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:82
+#: classes/sections/class-adq-sections-catalog.php:265
+msgid "Visibility price on shop"
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:92
+#: classes/sections/class-adq-sections-catalog.php:284
+msgid "Visibility add to cart button"
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:102
+msgid "Visibility add to quote button on loop"
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:103
+msgid "Visible"
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:109
+msgid "Text to show on \"add to quote\" button"
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:112
+msgid "Add to quote"
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:129
+msgid "Choose visibility by taxonomy"
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:130
+msgid "Select taxonomy to filter buttons and price visibility by terms."
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:247
+msgid "Choose the terms..."
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:257
+#: classes/sections/class-adq-sections-catalog.php:276
+#: classes/sections/class-adq-sections-catalog.php:295
+msgid "Exclude terms"
+msgstr ""
+
+#: classes/sections/class-adq-sections-catalog.php:258
+#: classes/sections/class-adq-sections-catalog.php:277
+#: classes/sections/class-adq-sections-catalog.php:296
+msgid "Choose if terms must be included or excluded"
+msgstr ""
+
+#: classes/widget/class-wc-widget-quote.php:25
+msgid "Display the user's Quote List in the sidebar."
+msgstr ""
+
+#: classes/widget/class-wc-widget-quote.php:27
+msgid "WooCommerce Quotation"
+msgstr ""
+
+#: classes/widget/class-wc-widget-quote.php:32
+msgid "Title"
+msgstr ""
+
+#: classes/widget/class-wc-widget-quote.php:37
+msgid "Show simple widget version"
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:27
+msgid "Remind proposal"
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:28
+msgid ""
+"Remind proposal emails are sent to the customer when the proposal reminder "
+"have expired and haven acepted or rejected oru proposal."
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:30
+msgid "Our proposal has not been answered"
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:31
+#: classes/emails/class-adq-email-customer-proposal.php:31
+msgid "Our {site_title} quotation from {order_date} is proposed"
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:129
+#: classes/emails/class-adq-email-customer-proposal-ok.php:133
+#: classes/emails/class-adq-email-customer-proposal-ko.php:129
+#: classes/emails/class-adq-email-admin-proposal-ok.php:134
+#: classes/emails/class-adq-email-admin-note.php:139
+#: classes/emails/class-adq-email-customer-note.php:134
+#: classes/emails/class-adq-email-admin-new-quote.php:135
+#: classes/emails/class-adq-email-customer-quote.php:129
+#: classes/emails/class-adq-email-customer-proposal.php:129
+#: classes/emails/class-adq-email-admin-proposal-ko.php:134
+msgid "Enable/Disable"
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:131
+#: classes/emails/class-adq-email-customer-proposal-ok.php:135
+#: classes/emails/class-adq-email-customer-proposal-ko.php:131
+#: classes/emails/class-adq-email-admin-proposal-ok.php:136
+#: classes/emails/class-adq-email-admin-note.php:141
+#: classes/emails/class-adq-email-customer-note.php:136
+#: classes/emails/class-adq-email-admin-new-quote.php:137
+#: classes/emails/class-adq-email-customer-quote.php:131
+#: classes/emails/class-adq-email-customer-proposal.php:131
+#: classes/emails/class-adq-email-admin-proposal-ko.php:136
+msgid "Enable this email notification"
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:135
+#: classes/emails/class-adq-email-customer-proposal-ok.php:139
+#: classes/emails/class-adq-email-customer-proposal-ko.php:135
+#: classes/emails/class-adq-email-admin-proposal-ok.php:140
+#: classes/emails/class-adq-email-admin-note.php:145
+#: classes/emails/class-adq-email-customer-note.php:140
+#: classes/emails/class-adq-email-admin-new-quote.php:148
+#: classes/emails/class-adq-email-customer-quote.php:135
+#: classes/emails/class-adq-email-customer-proposal.php:135
+#: classes/emails/class-adq-email-admin-proposal-ko.php:140
+msgid "Subject"
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:137
+#: classes/emails/class-adq-email-remind-proposal.php:144
+#: classes/emails/class-adq-email-customer-proposal-ok.php:141
+#: classes/emails/class-adq-email-customer-proposal-ok.php:148
+#: classes/emails/class-adq-email-customer-proposal-ko.php:137
+#: classes/emails/class-adq-email-customer-proposal-ko.php:144
+#: classes/emails/class-adq-email-admin-proposal-ok.php:142
+#: classes/emails/class-adq-email-admin-proposal-ok.php:149
+#: classes/emails/class-adq-email-admin-note.php:147
+#: classes/emails/class-adq-email-admin-note.php:154
+#: classes/emails/class-adq-email-customer-note.php:142
+#: classes/emails/class-adq-email-customer-note.php:149
+#: classes/emails/class-adq-email-admin-new-quote.php:150
+#: classes/emails/class-adq-email-admin-new-quote.php:157
+#: classes/emails/class-adq-email-customer-quote.php:137
+#: classes/emails/class-adq-email-customer-quote.php:144
+#: classes/emails/class-adq-email-customer-proposal.php:137
+#: classes/emails/class-adq-email-customer-proposal.php:144
+#: classes/emails/class-adq-email-admin-proposal-ko.php:142
+#: classes/emails/class-adq-email-admin-proposal-ko.php:149
+#, php-format
+msgid "Defaults to <code>%s</code>"
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:142
+#: classes/emails/class-adq-email-customer-proposal-ok.php:146
+#: classes/emails/class-adq-email-customer-proposal-ko.php:142
+#: classes/emails/class-adq-email-admin-proposal-ok.php:147
+#: classes/emails/class-adq-email-admin-note.php:152
+#: classes/emails/class-adq-email-customer-note.php:147
+#: classes/emails/class-adq-email-admin-new-quote.php:155
+#: classes/emails/class-adq-email-customer-quote.php:142
+#: classes/emails/class-adq-email-customer-proposal.php:142
+#: classes/emails/class-adq-email-admin-proposal-ko.php:147
+msgid "Email Heading"
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:149
+#: classes/emails/class-adq-email-customer-proposal-ok.php:153
+#: classes/emails/class-adq-email-customer-proposal-ko.php:149
+#: classes/emails/class-adq-email-admin-proposal-ok.php:154
+#: classes/emails/class-adq-email-admin-note.php:159
+#: classes/emails/class-adq-email-customer-note.php:154
+#: classes/emails/class-adq-email-admin-new-quote.php:162
+#: classes/emails/class-adq-email-customer-quote.php:149
+#: classes/emails/class-adq-email-customer-proposal.php:149
+#: classes/emails/class-adq-email-admin-proposal-ko.php:154
+msgid "Email type"
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:151
+#: classes/emails/class-adq-email-customer-proposal-ok.php:155
+#: classes/emails/class-adq-email-customer-proposal-ko.php:151
+#: classes/emails/class-adq-email-admin-proposal-ok.php:156
+#: classes/emails/class-adq-email-admin-note.php:161
+#: classes/emails/class-adq-email-customer-note.php:156
+#: classes/emails/class-adq-email-admin-new-quote.php:164
+#: classes/emails/class-adq-email-customer-quote.php:151
+#: classes/emails/class-adq-email-customer-proposal.php:151
+#: classes/emails/class-adq-email-admin-proposal-ko.php:156
+msgid "Choose which format of email to send."
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:155
+#: classes/emails/class-adq-email-customer-proposal-ok.php:159
+#: classes/emails/class-adq-email-customer-proposal-ko.php:155
+#: classes/emails/class-adq-email-admin-proposal-ok.php:160
+#: classes/emails/class-adq-email-admin-note.php:165
+#: classes/emails/class-adq-email-customer-note.php:160
+#: classes/emails/class-adq-email-admin-new-quote.php:168
+#: classes/emails/class-adq-email-customer-quote.php:155
+#: classes/emails/class-adq-email-customer-proposal.php:155
+#: classes/emails/class-adq-email-admin-proposal-ko.php:160
+msgid "Plain text"
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:156
+#: classes/emails/class-adq-email-customer-proposal-ok.php:160
+#: classes/emails/class-adq-email-customer-proposal-ko.php:156
+#: classes/emails/class-adq-email-admin-proposal-ok.php:161
+#: classes/emails/class-adq-email-admin-note.php:166
+#: classes/emails/class-adq-email-customer-note.php:161
+#: classes/emails/class-adq-email-admin-new-quote.php:169
+#: classes/emails/class-adq-email-customer-quote.php:156
+#: classes/emails/class-adq-email-customer-proposal.php:156
+#: classes/emails/class-adq-email-admin-proposal-ko.php:161
+msgid "HTML"
+msgstr ""
+
+#: classes/emails/class-adq-email-remind-proposal.php:157
+#: classes/emails/class-adq-email-customer-proposal-ok.php:161
+#: classes/emails/class-adq-email-customer-proposal-ko.php:157
+#: classes/emails/class-adq-email-admin-proposal-ok.php:162
+#: classes/emails/class-adq-email-admin-note.php:167
+#: classes/emails/class-adq-email-customer-note.php:162
+#: classes/emails/class-adq-email-admin-new-quote.php:170
+#: classes/emails/class-adq-email-customer-quote.php:157
+#: classes/emails/class-adq-email-customer-proposal.php:157
+#: classes/emails/class-adq-email-admin-proposal-ko.php:162
+msgid "Multipart"
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-proposal-ok.php:27
+msgid "Customer proposal ok"
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-proposal-ok.php:28
+#: classes/emails/class-adq-email-admin-proposal-ok.php:28
+msgid "Send email confirming the OK of the proposal."
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-proposal-ok.php:31
+msgid ""
+"You have accepted our {site_title} proposal from {order_date} is accepted"
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-proposal-ko.php:27
+msgid "Customer proposal Declined"
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-proposal-ko.php:28
+#: classes/emails/class-adq-email-admin-proposal-ko.php:28
+msgid "Send email confirming the declination of the proposal."
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-proposal-ko.php:30
+#: classes/emails/class-adq-email-admin-proposal-ko.php:30
+msgid "Proposal Declined"
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-proposal-ko.php:31
+msgid "You have declined our {site_title} proposal from {order_date}"
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-proposal-ok.php:27
+msgid "Admin proposal ok"
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-proposal-ok.php:31
+msgid "A Customer have accepted our proposal"
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-note.php:29
+msgid "Admin note"
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-note.php:30
+msgid "Admin note emails are sent when a customer add a note to an order."
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-note.php:32
+#: classes/emails/class-adq-email-customer-note.php:32
+msgid "A customer have added a note"
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-note.php:33
+msgid ""
+"A customer have added a note to your {site_title} order from {order_date}"
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-note.php:29
+msgid "Customer note"
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-note.php:30
+msgid "Customer note emails are sent when you add a note to an order."
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-note.php:33
+msgid "Note added to your {site_title} order from {order_date}"
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-new-quote.php:28
+msgid "Admin request"
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-new-quote.php:29
+msgid ""
+"Admin Request emails are sent to the admin when a new quote request is send."
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-new-quote.php:31
+msgid "Your have a new quote request"
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-new-quote.php:32
+msgid "Your {site_title} quote request from {order_date} is send"
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-new-quote.php:141
+msgid "Recipient(s)"
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-new-quote.php:143
+#, php-format
+msgid ""
+"Enter recipients (comma separated) for this email. Defaults to <code>%s</"
+"code>."
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-quote.php:27
+msgid "Customer request"
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-quote.php:28
+msgid "Customer request emails are sent to the customer after request is done."
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-quote.php:30
+msgid "Your request has been received"
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-quote.php:31
+msgid "Your {site_title} Quote Request from {order_date} is received"
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-proposal.php:27
+msgid "Send proposal"
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-proposal.php:28
+msgid ""
+"Send proposal emails are sent to the customer when a proposal is ready to "
+"let choose the customer accepts or reject it."
+msgstr ""
+
+#: classes/emails/class-adq-email-customer-proposal.php:30
+msgid "Our proposal"
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-proposal-ko.php:27
+msgid "Admin proposal declined"
+msgstr ""
+
+#: classes/emails/class-adq-email-admin-proposal-ko.php:31
+msgid "A customer have rejected our proposal"
+msgstr ""
+
+#: edd/EDD_SL_Plugin_Updater.php:177
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr ""
+
+#: edd/EDD_SL_Plugin_Updater.php:184
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s"
+"\">update now</a>."
+msgstr ""
+
+#: edd/EDD_SL_Plugin_Updater.php:324
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: edd/EDD_SL_Plugin_Updater.php:324
+msgid "Error"
+msgstr ""
+
+#: edd/edd-adq.php:44
+msgid "Woocommerce Quotation License Options"
+msgstr ""
+
+#: edd/edd-adq.php:52
+msgid "License Key"
+msgstr ""
+
+#: edd/edd-adq.php:56
+msgid "Enter your license key"
+msgstr ""
+
+#: edd/edd-adq.php:62 edd/edd-adq.php:71
+msgid "Activate License"
+msgstr ""
+
+#: edd/edd-adq.php:66
+msgid "active"
+msgstr ""
+
+#: edd/edd-adq.php:68
+msgid "Deactivate License"
+msgstr ""
+
+#: templates/adq-cart-shipping.php:38
+#, php-format
+msgid "Shipping #%d"
+msgstr ""
+
+#: templates/adq-cart-shipping.php:40
+msgid "Shipping and Handling"
+msgstr ""
+
+#: templates/adq-cart-shipping.php:77
+msgid "Please use the shipping calculator to see available shipping methods."
+msgstr ""
+
+#: templates/adq-cart-shipping.php:81
+msgid ""
+"Please continue to the checkout and enter your full address to see if there "
+"are any available shipping methods."
+msgstr ""
+
+#: templates/adq-cart-shipping.php:85
+msgid "Please fill in your details to see available shipping methods."
+msgstr ""
+
+#: templates/adq-cart-shipping.php:94 templates/adq-cart-shipping.php:100
+msgid ""
+"There doesn&lsquo;t seem to be any available shipping methods. Please double "
+"check your address, or contact us if you need any help."
+msgstr ""
+
+#: templates/adq-cart-shipping.php:115
+msgid "Shipping"
+msgstr ""
+
+#: templates/adq-order-notes.php:16
+msgid "Add note"
+msgstr ""
+
+#: templates/adq-order-notes.php:16
+msgid ""
+"Add a note for your reference, or add a customer note (the user will be "
+"notified)."
+msgstr ""
+
+#: templates/adq-order-notes.php:23
+msgid "Add"
+msgstr ""
+
+#: templates/adq-form-billing-details.php:19
+msgid "Want to change billing information?"
+msgstr ""
+
+#: templates/adq-form-billing-details.php:20
+msgid "Click here to show billing information"
+msgstr ""
+
+#: templates/adq-form-billing-details.php:27
+msgid "Details"
+msgstr ""
+
+#: templates/adq-form-billing-details.php:33
+#: templates/adq-form-billing-details.php:55
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer please login at the top of the page."
+msgstr ""
+
+#: templates/adq-form-billing-details.php:48
+msgid "Create an account?"
+msgstr ""
+
+#: templates/adq-form-shipping.php:30
+msgid "Ship to a different address?"
+msgstr ""
+
+#: templates/adq-list.php:24 templates/order-details.php:23
+#: templates/emails/customer-proposal-ko.php:30
+#: templates/emails/customer-proposal-ok.php:32
+#: templates/emails/customer-note.php:37
+#: templates/emails/admin-proposal-ko.php:22
+#: templates/emails/admin-note.php:29
+#: templates/emails/customer-proposal.php:38
+#: templates/emails/admin-request.php:24
+#: templates/emails/customer-request.php:32
+#: templates/emails/admin-proposal-ok.php:22
+#: templates/emails/customer-proposal-reminder.php:32
+msgid "Product"
+msgstr ""
+
+#: templates/adq-list.php:26 templates/emails/customer-proposal-ko.php:32
+#: templates/emails/customer-proposal-ok.php:34
+#: templates/emails/customer-note.php:39
+#: templates/emails/admin-proposal-ko.php:24
+#: templates/emails/admin-note.php:31
+#: templates/emails/customer-proposal.php:40
+#: templates/emails/admin-request.php:26
+#: templates/emails/customer-request.php:34
+#: templates/emails/admin-proposal-ok.php:24
+#: templates/emails/customer-proposal-reminder.php:34
+msgid "Price"
+msgstr ""
+
+#: templates/adq-list.php:28 templates/emails/customer-proposal-ko.php:31
+#: templates/emails/customer-proposal-ok.php:33
+#: templates/emails/customer-note.php:38
+#: templates/emails/admin-proposal-ko.php:23
+#: templates/emails/admin-note.php:30
+#: templates/emails/customer-proposal.php:39
+#: templates/emails/admin-request.php:25
+#: templates/emails/customer-request.php:33
+#: templates/emails/admin-proposal-ok.php:23
+#: templates/emails/customer-proposal-reminder.php:33
+msgid "Quantity"
+msgstr ""
+
+#: templates/adq-list.php:30 templates/my-quotation.php:35
+#: templates/order-details.php:24
+msgid "Total"
+msgstr ""
+
+#: templates/adq-list.php:51
+msgid "Free shipping coupon"
+msgstr ""
+
+#: templates/adq-list.php:57
+msgid "[Remove]"
+msgstr ""
+
+#: templates/adq-list.php:58
+msgid "Coupon:"
+msgstr ""
+
+#: templates/adq-list.php:70
+msgid "Coupon"
+msgstr ""
+
+#: templates/adq-list.php:70
+msgid "Coupon code"
+msgstr ""
+
+#: templates/adq-list.php:70
+msgid "Apply Coupon"
+msgstr ""
+
+#: templates/adq-list.php:79
+msgid "Remove all items"
+msgstr ""
+
+#: templates/adq-list.php:96 templates/widget/mini-quote.php:41
+msgid "Remove this item"
+msgstr ""
+
+#: templates/adq-list.php:172
+msgid "Click here to add a product note"
+msgstr ""
+
+#: templates/my-quotation.php:26
+msgid "Recent Quotes"
+msgstr ""
+
+#: templates/my-quotation.php:32
+msgid "Quote"
+msgstr ""
+
+#: templates/my-quotation.php:33
+msgid "Date"
+msgstr ""
+
+#: templates/my-quotation.php:34
+msgid "Status"
+msgstr ""
+
+#: templates/my-quotation.php:59
+#, php-format
+msgid "%s for %s item"
+msgid_plural "%s for %s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/my-quotation.php:68 templates/emails/customer-proposal-ok.php:16
+#: templates/emails/plain/customer-proposal-ok.php:15
+msgid "Pay"
+msgstr ""
+
+#: templates/my-quotation.php:81
+msgid "View"
+msgstr ""
+
+#: templates/adq-empty.php:16
+msgid "Your quoted list is currently empty."
+msgstr ""
+
+#: templates/adq-empty.php:18
+msgid "Return To Shop"
+msgstr ""
+
+#: templates/order-details.php:17 templates/adq-order-detail-quote.php:20
+msgid "Quote Details"
+msgstr ""
+
+#: templates/adq-order-detail-quote.php:28
+msgid "This proposal is valid until:"
+msgstr ""
+
+#: templates/adq-order-detail-quote.php:38
+msgid "Attached files:"
+msgstr ""
+
+#: templates/view-order.php:20
+#, php-format
+msgid ""
+"Quote #<mark class=\"order-number\">%s</mark> was placed on <mark class="
+"\"order-date\">%s</mark> and is currently <mark class=\"order-status\">%s</"
+"mark>."
+msgstr ""
+
+#: templates/view-order.php:26
+msgid "Order Updates"
+msgstr ""
+
+#: templates/view-order.php:32
+msgid "l jS \\o\\f F Y, h:ia"
+msgstr ""
+
+#: templates/view-order.php:32
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: templates/adq-form-login.php:18
+msgid "Returning customer?"
+msgstr ""
+
+#: templates/adq-form-login.php:19
+msgid "Click here to login"
+msgstr ""
+
+#: templates/adq-form-login.php:26
+msgid ""
+"If you have shopped with us before, please enter your details in the boxes "
+"below. If you are a new customer please proceed to the Register section."
+msgstr ""
+
+#: templates/widget/simple-mini-quote.php:20
+#: templates/widget/mini-quote.php:22
+msgid "No products in the quote list."
+msgstr ""
+
+#: templates/widget/simple-mini-quote.php:38
+msgid "item in quote list"
+msgstr ""
+
+#: templates/emails/customer-proposal-ko.php:14
+msgid ""
+"Our proposal have been rejected. The proposal is shown below for your "
+"reference:"
+msgstr ""
+
+#: templates/emails/customer-proposal-ko.php:18
+#: templates/emails/customer-proposal-ok.php:20
+#: templates/emails/customer-note.php:24
+#: templates/emails/customer-proposal.php:22
+#: templates/emails/customer-request.php:22
+#: templates/emails/customer-proposal-reminder.php:20
+#: templates/emails/plain/customer-proposal-ko.php:19
+#: templates/emails/plain/customer-proposal-ok.php:19
+#: templates/emails/plain/customer-note.php:26
+#: templates/emails/plain/admin-proposal-ko.php:17
+#: templates/emails/plain/admin-note.php:24
+#: templates/emails/plain/customer-proposal.php:19
+#: templates/emails/plain/admin-request.php:17
+#: templates/emails/plain/customer-request.php:17
+#: templates/emails/plain/admin-proposal-ok.php:17
+#: templates/emails/plain/customer-proposal-reminder.php:19
+#, php-format
+msgid "You can access your account area to view your orders here: %s."
+msgstr ""
+
+#: templates/emails/customer-proposal-ko.php:18
+#: templates/emails/customer-proposal-ok.php:20
+#: templates/emails/customer-note.php:24
+#: templates/emails/customer-proposal.php:22
+#: templates/emails/customer-request.php:22
+#: templates/emails/customer-proposal-reminder.php:20
+msgid "My Account"
+msgstr ""
+
+#: templates/emails/customer-proposal-ko.php:24
+#: templates/emails/customer-proposal-ok.php:26
+msgid "The proposal:"
+msgstr ""
+
+#: templates/emails/customer-proposal-ko.php:58
+#: templates/emails/customer-proposal-ok.php:60
+#: templates/emails/admin-proposal-ko.php:50
+#: templates/emails/customer-proposal.php:66
+#: templates/emails/admin-request.php:62
+#: templates/emails/customer-request.php:72
+#: templates/emails/admin-proposal-ok.php:50
+#: templates/emails/customer-proposal-reminder.php:60
+#: templates/emails/plain/admin-proposal-ko.php:45
+#: templates/emails/plain/admin-request.php:55
+#: templates/emails/plain/admin-proposal-ok.php:45
+msgid "Customer details"
+msgstr ""
+
+#: templates/emails/customer-proposal-ko.php:61
+#: templates/emails/customer-proposal-ok.php:63
+#: templates/emails/admin-proposal-ko.php:53
+#: templates/emails/customer-proposal.php:69
+#: templates/emails/admin-request.php:65
+#: templates/emails/customer-request.php:75
+#: templates/emails/admin-proposal-ok.php:53
+#: templates/emails/customer-proposal-reminder.php:63
+#: templates/emails/plain/customer-proposal-ko.php:49
+#: templates/emails/plain/customer-proposal-ok.php:49
+#: templates/emails/plain/admin-proposal-ko.php:48
+#: templates/emails/plain/customer-proposal.php:49
+#: templates/emails/plain/admin-request.php:58
+#: templates/emails/plain/customer-request.php:57
+#: templates/emails/plain/admin-proposal-ok.php:48
+#: templates/emails/plain/customer-proposal-reminder.php:49
+msgid "Email:"
+msgstr ""
+
+#: templates/emails/customer-proposal-ko.php:64
+#: templates/emails/customer-proposal-ok.php:66
+#: templates/emails/admin-proposal-ko.php:56
+#: templates/emails/customer-proposal.php:72
+#: templates/emails/admin-request.php:68
+#: templates/emails/customer-request.php:78
+#: templates/emails/admin-proposal-ok.php:56
+#: templates/emails/customer-proposal-reminder.php:66
+#: templates/emails/plain/customer-proposal-ko.php:52
+#: templates/emails/plain/customer-proposal-ok.php:52
+#: templates/emails/plain/admin-proposal-ko.php:51
+#: templates/emails/plain/customer-proposal.php:52
+#: templates/emails/plain/admin-request.php:61
+#: templates/emails/plain/customer-request.php:60
+#: templates/emails/plain/admin-proposal-ok.php:51
+#: templates/emails/plain/customer-proposal-reminder.php:52
+msgid "Tel:"
+msgstr ""
+
+#: templates/emails/customer-proposal-ok.php:14
+#: templates/emails/plain/customer-proposal-ok.php:13
+msgid ""
+"Our proposal have been accepted. The proposal is shown below for your "
+"reference:"
+msgstr ""
+
+#: templates/emails/customer-proposal-ok.php:16
+#: templates/emails/plain/customer-proposal-ok.php:15
+#, php-format
+msgid "You can proceed with the payment: %s."
+msgstr ""
+
+#: templates/emails/customer-note.php:18
+#: templates/emails/plain/customer-note.php:16
+msgid "Hello, a note has just been added to your order:"
+msgstr ""
+
+#: templates/emails/customer-note.php:28
+#: templates/emails/plain/customer-note.php:30
+msgid "For your reference, your order details are shown below."
+msgstr ""
+
+#: templates/emails/customer-note.php:32
+#, php-format
+msgid "Order #%s"
+msgstr ""
+
+#: templates/emails/admin-proposal-ko.php:13
+#, php-format
+msgid "The proposal from %s has been rejected. The request was as follows:"
+msgstr ""
+
+#: templates/emails/admin-proposal-ko.php:17
+#: templates/emails/admin-note.php:24 templates/emails/admin-request.php:19
+#: templates/emails/admin-proposal-ok.php:17
+#, php-format
+msgid "Request: %s"
+msgstr ""
+
+#: templates/emails/admin-note.php:18 templates/emails/plain/admin-note.php:16
+msgid "Hello, a customer have added a new note:"
+msgstr ""
+
+#: templates/emails/customer-proposal.php:16
+#: templates/emails/plain/customer-proposal-ko.php:13
+#: templates/emails/plain/customer-proposal.php:13
+msgid ""
+"Your Quote Request has been processed and we made this proposal for you. Our "
+"proposal are shown below for your reference:"
+msgstr ""
+
+#: templates/emails/customer-proposal.php:26
+#, php-format
+msgid "You can %s or %s our proposal"
+msgstr ""
+
+#: templates/emails/customer-proposal.php:27
+msgid "Accept"
+msgstr ""
+
+#: templates/emails/customer-proposal.php:28
+msgid "Reject"
+msgstr ""
+
+#: templates/emails/customer-proposal.php:32
+#: templates/emails/customer-proposal-reminder.php:26
+msgid "Our proposal:"
+msgstr ""
+
+#: templates/emails/admin-request.php:15
+#: templates/emails/plain/admin-proposal-ko.php:13
+#: templates/emails/plain/admin-request.php:13
+#: templates/emails/plain/admin-proposal-ok.php:13
+#, php-format
+msgid "You have received a quote request from %s. Their request is as follows:"
+msgstr ""
+
+#: templates/emails/customer-request.php:14
+#: templates/emails/plain/customer-request.php:13
+msgid ""
+"Your Quote Request has been received and is now being processed. Your "
+"request details are shown below for your reference:"
+msgstr ""
+
+#: templates/emails/customer-request.php:26
+msgid "Your Quote Request:"
+msgstr ""
+
+#: templates/emails/admin-proposal-ok.php:13
+#, php-format
+msgid "The proposal from %s has been accepted. The request was as follows:"
+msgstr ""
+
+#: templates/emails/customer-proposal-reminder.php:16
+#: templates/emails/plain/customer-proposal-reminder.php:13
+msgid ""
+"This is a reminder of the proposal that we made you. Our proposal are shown "
+"below for your reference:"
+msgstr ""
+
+#: templates/emails/plain/customer-proposal-ko.php:27
+#: templates/emails/plain/customer-proposal-ok.php:27
+#: templates/emails/plain/customer-proposal.php:27
+#: templates/emails/plain/customer-request.php:25
+#: templates/emails/plain/customer-proposal-reminder.php:27
+#, php-format
+msgid "Quote request number: %s"
+msgstr ""
+
+#: templates/emails/plain/customer-proposal-ko.php:28
+#: templates/emails/plain/customer-proposal-ok.php:28
+#: templates/emails/plain/admin-proposal-ko.php:27
+#: templates/emails/plain/customer-proposal.php:28
+#: templates/emails/plain/admin-request.php:27
+#: templates/emails/plain/customer-request.php:26
+#: templates/emails/plain/admin-proposal-ok.php:27
+#: templates/emails/plain/customer-proposal-reminder.php:28
+#, php-format
+msgid "Quote request date: %s"
+msgstr ""
+
+#: templates/emails/plain/customer-proposal-ko.php:46
+#: templates/emails/plain/customer-proposal-ok.php:46
+#: templates/emails/plain/customer-proposal.php:46
+#: templates/emails/plain/customer-request.php:54
+#: templates/emails/plain/customer-proposal-reminder.php:46
+msgid "Your details"
+msgstr ""
+
+#: templates/emails/plain/customer-note.php:36
+#: templates/emails/plain/admin-proposal-ko.php:25
+#: templates/emails/plain/admin-note.php:28
+#: templates/emails/plain/admin-request.php:25
+#: templates/emails/plain/admin-proposal-ok.php:25
+#, php-format
+msgid "Order number: %s"
+msgstr ""
+
+#: templates/emails/plain/customer-note.php:37
+#: templates/emails/plain/admin-proposal-ko.php:27
+#: templates/emails/plain/admin-note.php:29
+#: templates/emails/plain/admin-request.php:27
+#: templates/emails/plain/admin-proposal-ok.php:27
+msgid "jS F Y"
+msgstr ""
+
+#: templates/emails/plain/admin-proposal-ko.php:26
+#: templates/emails/plain/admin-request.php:26
+#: templates/emails/plain/admin-proposal-ok.php:26
+#, php-format
+msgid "Quote request link: %s"
+msgstr ""
+
+#: templates/views/html-attachment.php:3
+msgid "File Name"
+msgstr ""
+
+#: templates/views/html-attachment.php:4
+msgid "http://"
+msgstr ""
+
+#: templates/views/html-attachment.php:7
+msgid "Choose file"
+msgstr ""
+
+#: templates/views/html-attachment.php:7
+msgid "Insert file URL"
+msgstr ""
+
+#: templates/views/html-attachment.php:12
+msgid "Delete"
+msgstr ""

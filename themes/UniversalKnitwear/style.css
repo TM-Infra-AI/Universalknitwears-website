@@ -1,0 +1,16 @@
+/******************************************************************
+Theme Name: UniversalKnitwear
+Theme URI: http://www.UniversalKnitwear.com
+Description: 
+Author: Your Name Here
+Author URI: http://www.UniversalKnitwear.com
+Version: 4.0
+Tags: Sass
+******************************************************************/
+.posted_in {
+    font-weight: bold;
+}
+.woocommerce ul.products li.product h3 {
+    font-size: 1.5em !important;
+    font-weight: bold !important;
+}

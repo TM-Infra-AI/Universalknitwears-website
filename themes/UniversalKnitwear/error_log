@@ -1,0 +1,21 @@
+[15-May-2024 12:43:19 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/universalknit/public_html/wp-content/themes/UniversalKnitwear/index.php on line 1
+[09-Nov-2024 11:34:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/universalknit/public_html/wp-content/themes/UniversalKnitwear/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/universalknit/public_html/wp-content/themes/UniversalKnitwear/404.php on line 1
+[11-Nov-2024 10:52:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/universalknit/public_html/wp-content/themes/UniversalKnitwear/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/universalknit/public_html/wp-content/themes/UniversalKnitwear/404.php on line 1
+[10-Jan-2025 16:05:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/universalknit/public_html/wp-content/themes/UniversalKnitwear/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/universalknit/public_html/wp-content/themes/UniversalKnitwear/index.php on line 1
+[22-Apr-2025 15:35:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/universalknit/public_html/wp-content/themes/UniversalKnitwear/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/universalknit/public_html/wp-content/themes/UniversalKnitwear/index.php on line 1
+[17-Jun-2025 12:33:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/universalknit/public_html/wp-content/themes/UniversalKnitwear/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/universalknit/public_html/wp-content/themes/UniversalKnitwear/index.php on line 1

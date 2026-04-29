@@ -1,0 +1,83 @@
+/* Add custom status order icons */ 
+.column-order_status mark.request:after { 
+        background-image: url("../../../woocommerce-quotation/assets/img/request-status.png"); 
+} 
+.column-order_status mark.proposal:after { 
+        background-image: url("../../../woocommerce-quotation/assets/img/proposal-status.png"); 
+} 
+.column-order_status mark.proposal-sent:after { 
+        background-image: url("../../../woocommerce-quotation/assets/img/proposal-sent-status.png"); 
+} 
+.column-order_status mark.proposal-canceled:after { 
+        background-image: url("../../../woocommerce-quotation/assets/img/proposal-canceled-status.png"); 
+} 
+.column-order_status mark.proposal-expired:after { 
+        background-image: url("../../../woocommerce-quotation/assets/img/proposal-expired-status.png"); 
+} 
+.column-order_status mark.proposal-rejected:after { 
+        background-image: url("../../../woocommerce-quotation/assets/img/proposal-rejected-status.png"); 
+}
+.column-order_status mark.proposal-accepted:after { 
+        background-image: url("../../../woocommerce-quotation/assets/img/proposal-accepted.png"); 
+}
+.column-order_status mark.request:after, 
+.column-order_status mark.proposal:after,
+.column-order_status mark.proposal-sent:after,
+.column-order_status mark.proposal-canceled:after,
+.column-order_status mark.proposal-expired:after,
+.column-order_status mark.proposal-rejected:after,
+.column-order_status mark.proposal-accepted:after {
+        background-size: 100% 100%;
+        content:"";
+        height: 100%;
+        left: 0;
+        line-height: 1;
+        margin: 0;
+        position: absolute;
+        text-align: center;
+        text-indent: 0;
+        text-transform: none;
+        top: 0;
+        width: 100%;
+}
+
+#toplevel_page_adq_page .dashicons-before:before {
+        content: "\f473";
+}
+.downloadable_files table td .delete:before {
+    color: #999;
+    content:"\e013";
+    font-family: WooCommerce;
+    font-variant: normal;
+    font-weight: 400;
+    height: 100%;
+    left: 0;
+    line-height: 1;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    text-indent: 0;
+    text-transform: none;
+    top: 0;
+    width: 100%;
+}
+.downloadable_files table td .delete {
+    display: block;
+    height: 1em;
+    position: relative;
+    text-indent: -9999px;
+    width: 1em;
+}
+#woocommerce-adq-quote .date-picker-field, #woocommerce-adq-quote .date-picker-fieldreadonly {
+    width: 50%;
+}
+#woocommerce-adq-quote .form-field .hour, #woocommerce-adq-quote .form-field .minute {
+    width: 2.5em;
+}
+#woocommerce-adq-quote .form-field label {
+    display: block;
+    padding: 0 0 3px;
+}
+#woocommerce-adq-quote #adq_additional_info {
+    width: 100%;
+}

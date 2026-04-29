@@ -1,0 +1,31 @@
+					<footer class="footer" role="contentinfo">
+						<div id="inner-footer" class="row">
+							<div class="large-12 medium-12 columns">
+								<nav role="navigation">
+		    						<?php joints_footer_links(); ?>
+		    					</nav>
+		    				</div>
+							<div class="large-12 medium-12 columns">
+								<p class="source-org copyright">&copy; UNIVERSAL KNITWEARS . Mail: <a href="mailto:suraj@universalknitwears.com">suraj@universalknitwears.com</a> . Phone: 0091-9811222680</p>
+							</div>
+						</div> <!-- end #inner-footer -->
+					</footer> <!-- end .footer -->
+				</div>  <!-- end .main-content -->
+			</div> <!-- end .off-canvas-wrapper-inner -->
+		</div> <!-- end .off-canvas-wrapper -->
+ 
+<?php if ( is_front_page() ) { ?>
+<script>jQuery(function(){
+    accordion.init({
+    id: 'accordion', expandWidth: 460, itemWidth: 120, extpand: 4, delay: 3000, animateTime: 400, borderWidth: 1, autoPlay: false, deviator: 30, bounce:"-0px" });
+});
+
+</script>
+<?php } ?>
+<script>
+jQuery( "p" ).removeClass( ". validate-required" );
+jQuery( "p" ).removeClass( ".validate-required" );
+</script>
+		<?php wp_footer(); ?>
+	</body>
+</html> <!-- end page -->
